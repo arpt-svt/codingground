@@ -55,8 +55,8 @@ node* rev(node *start)
         prevA = curr;
         curr = nextA;
     }
-    //start = prevA;
-    return prevA;
+    start = prevA;
+    return start;
 }
 int main()
 {
