@@ -11,7 +11,7 @@ void heapify(int arr[],int n,int i){
     if(r<n && arr[r] > arr[max]) max = r;
     if(max!=i){
         swap(&arr[i],&arr[max]);
-        heapify(arr,n,max); 
+        heapify(arr,i,max); 
     }
 }
 
